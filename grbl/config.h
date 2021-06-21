@@ -32,10 +32,10 @@
 
 
 // Define board type for pin map and default settings.
-#define CPU_MAP_SMOOTHIEBOARD   // Smoothieboard (NXP LPC1769 MCU)
+//#define CPU_MAP_SMOOTHIEBOARD   // Smoothieboard (NXP LPC1769 MCU)
 //#define CPU_MAP_C3D_REMIX       // Cohesion3D Remix (NXP LPC1769 MCU)
 //#define CPU_MAP_C3D_MINI        // Cohesion3D Mini (NXP LPC1769 MCU)
-//#define CPU_MAP_MKS_SBASE       // MKS SBASE Board (NXP LPC1768 MCU)
+#define CPU_MAP_MKS_SBASE       // MKS SBASE Board (NXP LPC1768 MCU)
 //#define CPU_MAP_AZTEEG_X5       // Azteeg X5 Board (NXP LPC1769 MCU)
 
 // Force other Spindle PWM Pin (default is P2.5)
@@ -43,8 +43,8 @@
 //#define SPINDLE_PWM_PIN_2_4
 
 // Define machine type for machine specific defaults
-//#define DEFAULTS_GENERIC
-#define DEFAULTS_K40
+#define DEFAULTS_GENERIC
+//#define DEFAULTS_K40
 //#define DEFAULTS_FABKIT
 //#define DEFAULTS_JONAS
 
@@ -181,7 +181,7 @@
 // Enables a second coolant control pin via the mist coolant g-code command M7 on the Arduino Uno
 // analog pin 4. Only use this option if you require a second coolant control pin.
 // NOTE: The M8 flood coolant control pin on analog pin 3 will still be functional regardless.
-// #define ENABLE_M7 // Disabled by default. Uncomment to enable.
+ #define ENABLE_M7 // Disabled by default. Uncomment to enable.
 
 // This option causes the feed hold input to act as a safety door switch. A safety door, when triggered,
 // immediately forces a feed hold and then safely de-energizes the machine. Resuming is blocked until
